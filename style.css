@@ -1,0 +1,448 @@
+
+
+
+
+/*General styles*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ 
+/*Styles for the body element*/
+body {
+    font-family: 'Kamryn', sans-serif;
+    color: grey;
+   /* This creates a subtle linear gradient background for the body */
+    background : linear-gradient(to right, #f0f9ff, #e0f2ff);
+    margin: 0; /* Remove default body margins for better centering */
+    padding: 10px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /*This sets the background color of the body to a light antique white*/
+    background-color: #fff; /* Set the body background to white */
+    background-attachment: fixed; /* Fix the background image */
+    background-position: center center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+}
+
+.section { /* Class for each section on your home page */
+  animation: fadeIn 1s ease-in-out; /* Fade in animation on scroll */
+  transition: transform 0.2s ease; /*Smooth transform animation*/
+}
+
+.section:hover { /* Hover can be used to trigger on scroll event */
+  transform: translateY(-5px); /* Move the section down slightly */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; } /* Start invisible */
+  to { opacity: 1; } /* Fade in to full opacity */
+}
+.content { /*Style your foreground content here(text, elements etc.)*/
+  position: relative; /*Allow relative positioning fro parallax effect*/
+
+}
+
+
+/* Styles for the header section */
+header {
+  background-color: blue; /* Set background color to blue */
+  color: white; /* Maintain white text for contrast */
+  padding: 20px 10%;
+  text-align: center;
+}
+ 
+/*Style for the navigation section*/
+nav {
+    background-color: transparent; /*Set background to transparent*/
+    padding: 0; /*Remove padding*/
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centers the navigation buttons horizontally *///
+}
+
+nav ul li {
+    margin: 0 5px; /* Adds spacing between navigation list items */
+}
+
+/*Styles for the navigation buttons*/
+.nav-button {
+    color: white;
+    text-decoration: none;
+    background-color: darkblue;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Creates a smooth hover effect */
+}
+
+.nav-button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black; /* Changes button style on hover */
+}
+
+/* Styles for the h2 element within the header */
+header h2 {
+    padding: 20px 10%;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Adding shadow for depth */
+    background-color: black;
+}
+
+/* Hover effects for text elements */
+p:hover, span:hover {
+    color: blue;
+    cursor: pointer; /* Changes cursor to a hand icon on hover, indicating potential interaction */
+  }
+  
+  /* Specific hover effect for a text element with the class "intro-text" */
+  .intro-text:hover {  /* Specific text element hover effect */
+    color: red;
+  }
+  
+  /* Hover effects for h2 elements */
+  h2:hover {
+    color: orange;
+  }
+  
+  /* Specific hover effect for an h2 element with the class "intro-title" */
+.intro-title:hover {
+  text-shadow: 0 0 3px rgba(0,0,0,0.3); /* Adds a text shadow on hover */
+}
+  
+  /* Other styles from your existing code */
+  
+//* Styles for the experience section containers */
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+  width: 40%; /* Adjust width as needed */
+  margin: 0 auto; /* Centers the boxes horizontally */
+  background-color: #f9f9f9; /* Light background color */
+  transition: transform 0.2s ease-in-out, background-color 0.3s ease; /*Combine hover transitions*/
+}
+  
+.experience-details {
+  margin-top: 10px; /* Add space between experience entries */
+}
+
+  .experience-container:hover {
+    background-color: #eee; /* Lighten background on hover */
+    transform: translateY(-2px);  /* Move the box down 2px on hover (optional) */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    cursor: pointer; /* Indicate interactivity */
+    background-color: peachpuff; /*Change background color to peach on hover*/
+  }
+  
+  /* Styles for the experience content within the containers */
+  .experience-container h3 {
+    margin-top: 0;
+    text-align: center;
+    color: black;
+    margin-bottom: 5px; /*Add space between experience titles*/
+  }
+  
+  .experience-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    text-align: center; /*Add this line*/
+  }
+  
+  .experience-container li {
+    margin-bottom: 5px;
+  }
+
+.center{
+    text-align: center;
+}
+
+/* Content sections with rounded corners and shadows */
+main {
+    flex: 1;
+    padding: 20px 10%;
+    padding-bottom: 60px; /* Ensure space for footer */
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f1f1f1; /* Set a light gray background for the container */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    margin-bottom: 20px; /* Add space between sections */
+    width: 70%; /*Ajust width as needed*/
+  }
+
+  .hover:hover {
+    /* Styles for hover effect */
+    background-color: #ddd; /* Change this to your desired hover color */
+    cursor: pointer; /* Change cursor to indicate interactivity */
+  }
+  
+  .skill-box:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    transform: translateY(-2px); /* Move skill box slightly down on hover */
+  }
+  
+
+/* Styles for the skills grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid columns */
+    gap: 20px; /* Add spacing between skill boxes */
+    grid-gap: 20px; /* Space between grid items */
+    margin-top: 20px;
+}
+
+/* Styles for the skill boxes */
+.skill-box {
+    background-color: #f9f9f9; /* Light background color for contrast */
+    border: 1px solid #ccc; /* Light gray border */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adding shadow for depth */
+    background-color: darkslategray;
+    color: #ccc;
+    text-align: left;
+    cursor: pointer; /* Change cursor to pointer on hover */
+  transition: transform 0.2s ease-in-out; /* Add a smooth hover animation */
+}
+
+/* Header styles within skill boxes */
+.skill-box h3 {
+    margin-top: 0; /* Remove top margin */
+    color: white; /* Deep navy blue color */
+    text-align: center;
+}
+
+/* Styles for the skill bars */
+.skill-bar {
+    background-color: #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.skill-bar-fill {
+    height: 9px;
+    background-color: black;
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.intro {
+  display: flex; /* Make intro a flexbox container */
+  flex-direction: column; /*Stack elements vertically*/
+  justify-content:center; /*Center content horozontally*/
+  align-items: center; /* Center content vertically within the section*/
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+  margin: 0 auto; /*Center the box horozontally*/
+  width: 70%; /*Adjust width as needed*/
+
+}
+.education-details{
+  margin-top: 20px; /*Add space between education sections*/
+  border: 1px solid #ddd; /* Add a border for the box */
+  border-radius: 8px; /* Add rounded corners for a smooth look */
+  padding: 15px; /* Add padding for spacing */
+  margin-bottom: 15px; /* Add space between education details */
+  /*Existing styles for the box*/
+  animation: move 0.5s ease-in-out; /*Add animation*/
+  transition: transform 0.2s ease-in-out;, background-color: 0.3s ease; /*Combine hover transitions*/
+}
+
+.education-details:hover {
+transform: translate(-2px); /*Move the box down 2px on hover*/
+background-color: peachpuff; /*Change background color to peach on hover*/
+}
+
+
+.education-details h2 {
+  margin-bottom: 5px; /*Add space between education level headings*/
+}
+  .intro h2 {
+    margin-bottom: 10px; /*Add spacing between h2 and p*/
+    margin-bottom: 5px; /*Add sapce below education level heading*/
+  }
+
+.intro-content {
+  flex: 1; /* Allow text content to grow and fill remaining space */
+
+}
+
+.animate {
+    animation: move 0.5s ease-in-out;
+  }
+  
+  @keyframes move {
+    from { transform: translateX(0px); } /*Start from original position*/
+    to { transform: translateX(10px); } /*Move the box 10px to the right*/
+  }
+
+/*Styles for the image container*/
+.image-container {
+    text-align: center;
+    margin-bottom: 20px;
+    /* Adjust styles as needed for image positioning (optional) */
+}
+
+.passport-photo {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+footer {
+    background-color:darkblue;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    margin-top: auto; /* Ensure footer stays at the bottom */
+}
+
+.contact-info {
+    background-color: #f9f9f9; /* Light background color */
+    border: 1px solid #ddd; /* Light gray border */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adding shadow for depth */
+    margin-bottom: 20px;
+    display: flex; /* Make content align vertically */
+    flex-direction: column; /* Stack content on top of each other */
+    gap: 10px; /*Add a gap of 10x between elements inside the flexbox*/
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text content */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    display: flex;
+    align-items: center; /* Vertically center content */
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease ; /*Combine hover transitions*/
+
+}
+    
+
+  .contact-info h2 {
+    margin-bottom: 10px; /* Add space between heading and list */
+  }
+  
+  .contact-info h2:first-child { /* Target the first h2 element within .contact-info */
+    text-align: left; /* Align text to the left */
+}
+
+  .contact-info:hover {
+    background-color: #eee; /* Change background color on hover */
+    cursor: pointer; /* Change cursor to indicate interactivity */
+    transform: translate(-2px); /*Move the box down 2px on hover (optional)*/
+    background-color: peachpuff; /*Change background color to peach on hover*/
+  }
+
+  video {
+    border: 5px solid white; /* Add a white solid border */
+    border-radius: 5px; /* Add rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    background-color: #001F3F;
+  }
+
+      /*border styles here*/
+  video{ border-color: black;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 5px;
+  }
+
+  header {
+    background-color: darkblue;  /* Example background color */
+    padding: 10px 20px;  /* Example padding */
+    overflow: hidden; /*Contain floated elements*/
+  }
+
+  .left-icon-container{
+    float: left;
+  }
+
+  /*No changes to right-icon-container styles (if applicable)*/
+  
+  .left-icon-container,
+  .right-icon-container {
+    display: inline-block;
+    vertical-align: middle;  /* Vertically align icons with header text */
+  }
+  
+  .left-icon-container {
+    margin-right: 20px;  /* Add margin for spacing */
+  }
+  
+  .right-icon-container {
+    margin-left: 20px;  /* Add margin for spacing */
+  }
+  
+  .left-icon-container img,
+  .right-icon-container i {
+    width: 50px;  /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+  }
+
+  .passport-photo{
+    width: 100px; /*Adjust width as needed*/
+    height: 100px; /*Adjust height as needed*/
+    border-radius: 50%; /*For circular image*/
+    margin: 0 auto; /*Centers the image horizontally*/
+  }
+
+.intro-content {
+  margin: 0 auto;
+  flex: 1;
+  margin: 0 auto; /* Center horizontally */
+}
+
+.details-container {
+  width: 50%; /* Set a width for the details box */
+  margin: 0 auto; /* Center the box horizontally */
+  border: 1px solid #ddd; /* Add a border for the box */
+  border-radius: 8px; /* Add rounded corners for a smooth look */
+  padding: 20px; /* Add padding for spacing */
+}
+
+.details {
+  text-align: left; /* Align text to the left within the box */
+}

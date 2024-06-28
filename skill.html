@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <script>
+        const skillBoxes = document.querySelectorAll('.skill-box');
+        
+        skillBoxes.forEach(box => {
+          box.addEventListener('mouseover', () => {
+            box.classList.add('animate');
+          });
+        
+          box.addEventListener('mouseout', () => {
+            box.classList.remove('animate');
+          });
+        });
+        </script>
+    <header>
+        <div class="left-icon-container">
+            <a href="student.html"><img src="picture/Logo.jpg" alt="student" style="width:42px;height:42px;"></a>
+          </div>
+          <br>
+          <h1>E-Resume</h1>
+          <br>
+          <br>
+        <nav>
+            <ul>
+                <li><a href="home.html" class="nav-button">Home</a></li>
+                <li><a href="about.html" class="nav-button">About</a></li>
+                <li><a href="contact.html" class="nav-button">Contact</a></li>
+                <li><a href="experience.html" class="nav-button">Experience</a></li>
+                <li><a href="skill.html" class="nav-button">Skills</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+       
+        <section class="intro">
+            <h2 style="text-align: center;">SKILLS</h2>
+        </section>
+        <div class="container">
+            <div class="skills-grid">
+                <div class="skill-box hover">
+                    <h3>Software</h3>
+                    <p>Java:</p>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width: 100%;"></div>
+                    </div>
+                    <p>Python:</p>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width: 80%;"></div>
+                    </div>
+                    <p>C++:</p>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill-box hover">
+                    <h3>Data Analysis</h3>
+                    <p>SQL:</p>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width: 80%;"></div>
+                    </div>
+                    <p>R:</p>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width: 60%;"></div>
+                    </div>
+                </div>
+                <div class="skill-box hover">
+                    <h3>Coding</h3>
+                    <p>HTML:</p>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width: 100%;"></div>
+                    </div>
+                    <p>CSS:</p>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width: 100%;"></div>
+                    </div>
+                    <p>JavaScript:</p>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width: 80%;"></div>
+                    </div> 
+                </div>
+                <div class="skill-box hover">
+                    <h3>Microsoft Office</h3>
+                    <p>Word:</p>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width: 100%;"></div>
+                    </div>
+                    <p>PowerPoint:</p>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width: 100%;"></div>
+                    </div>
+                    <p>Excel:</p>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width: 80%;"></div>
+                    </div>
+                    <p>Access:</p>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width: 60%;"></div>
+                    </div>
+                </div>
+                <div class="skill-box hover">
+                    <h3>Language</h3>
+                    <p>English:</p>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width: 80%;"></div>
+                    </div>
+                    <p>Bahasa Melayu:</p>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width: 100%;"></div>
+                    </div>
+                    <p>Japanese:</p>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width: 60%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 AmirulBudi. All rights reserved.</p>
+    </footer>
+</body>
+</html>
